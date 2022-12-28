@@ -1,6 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap");
 * {
    box-sizing: 0;
-   font-family: sans-serif;
+   font-family: "Rubik Bubbles", cursive, Arial, Helvetica, sans-serif;
 }
 
 html,
@@ -38,13 +39,22 @@ body {
 .first-half {
    top: 50%;
    left: 50%;
-   transform: translate(-65%, -60%) rotate(-45deg);
+   transform: translate(-65%, -56%) rotate(-45deg);
    border-bottom-right-radius: 30px;
 }
 
 .second-half {
    top: 50%;
    left: 50%;
-   transform: translate(-34.6%, -60%) rotate(45deg);
+   transform: translate(-34.6%, -56%) rotate(45deg);
    border-bottom-left-radius: 30px;
+}
+
+.name {
+   position: absolute;
+   z-index: 1;
+   font-size: 7.5rem;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -75%);
 }
