@@ -61,4 +61,30 @@ body {
    top: 50%;
    left: 50%;
    transform: translate(-50%, -75%);
+   background: linear-gradient(
+      to right,
+      #54cffc,
+      #2ffacb,
+      rgb(245, 255, 209),
+      rgb(168, 179, 240)
+   );
+   background-size: 400% 400%;
+   background-clip: initial;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   animation: background 3s infinite alternate-reverse;
+}
+
+@keyframes background {
+   0% {
+      background-position: 0% 0%;
+   }
+
+   50% {
+      background-position: 50% 0%;
+   }
+
+   100% {
+      background-position: 100% 0%;
+   }
 }
