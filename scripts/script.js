@@ -4,8 +4,18 @@ const Heart = (function () {
       name = document.querySelector(".name");
 
    return {
-      shape,
+      heart,
       parts,
       name,
+      beat,
    };
+
+   function beat() {
+      heart.classList.add("beated-heart");
+
+      setTimeout(() => heart.classList.remove("beated-heart"), 400);
+      setTimeout(beat, 1200);
+   }
 })();
+
+onload = Heart.beat;

@@ -21,11 +21,14 @@ body {
 }
 
 .heart {
-   background: yellow;
    height: 600px;
    width: 600px;
    border-radius: 10px;
    position: relative;
+}
+
+.beated-heart {
+   scale: 1.2;
 }
 
 .half {
