@@ -38,7 +38,7 @@ body {
    background: red;
    border-radius: 250px 250px 0 20px;
    position: absolute;
-   box-shadow: inset 0 0 20px 10px rgb(183, 0, 255);
+   z-index: 1;
 }
 
 .first-half {
@@ -46,7 +46,6 @@ body {
    left: 50%;
    transform: translate(-65%, -56%) rotate(-45deg);
    border-bottom-right-radius: 30px;
-   z-index: 1;
 }
 
 .second-half {
@@ -89,4 +88,39 @@ body {
    100% {
       background-position: 100% 0%;
    }
+}
+
+/* * Shadow of the heart */
+.heart-shadow {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   height: 600px;
+   width: 600px;
+   border-radius: 10px;
+}
+
+.shadow-half {
+   width: 350px;
+   height: 500px;
+   background: rgb(183, 0, 255);
+   border-radius: 250px 250px 0 20px;
+   position: absolute;
+   z-index: -1;
+   scale: 1.05;
+}
+
+.first-shadow-half {
+   top: 50%;
+   left: 50%;
+   transform: translate(-65%, -56%) rotate(-45deg);
+   border-bottom-right-radius: 30px;
+}
+
+.second-shadow-half {
+   top: 50%;
+   left: 50%;
+   transform: translate(-34.6%, -56%) rotate(45deg);
+   border-bottom-left-radius: 30px;
 }
