@@ -18,4 +18,4 @@ const Heart = (function () {
    }
 })();
 
-onload = Heart.beat;
+// onload = Heart.beat;
