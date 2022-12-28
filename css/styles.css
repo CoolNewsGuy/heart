@@ -21,7 +21,30 @@ body {
 
 .heart {
    background: yellow;
-   height: 450px;
-   width: 450px;
+   height: 600px;
+   width: 600px;
    border-radius: 10px;
+   position: relative;
+}
+
+.half {
+   width: 350px;
+   height: 500px;
+   background: red;
+   border-radius: 250px 250px 0 20px;
+   position: absolute;
+}
+
+.first-half {
+   top: 50%;
+   left: 50%;
+   transform: translate(-65%, -60%) rotate(-45deg);
+   border-bottom-right-radius: 30px;
+}
+
+.second-half {
+   top: 50%;
+   left: 50%;
+   transform: translate(-34.6%, -60%) rotate(45deg);
+   border-bottom-left-radius: 30px;
 }
