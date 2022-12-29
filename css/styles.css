@@ -32,7 +32,6 @@ body {
    position: relative;
    text-align: center;
    z-index: 999;
-   animation: rotate-heart-3D 6s infinite alternate linear;
 }
 
 .beated-heart {
@@ -111,7 +110,6 @@ body {
    height: 600px;
    width: 600px;
    border-radius: 10px;
-   animation: rotate-shadow-heart-3D 6s infinite alternate linear;
 }
 
 .shadow-half {
@@ -136,22 +134,4 @@ body {
    left: 50%;
    transform: translate(-34.6%, -56%) rotate(45deg);
    border-bottom-left-radius: 30px;
-}
-
-@keyframes rotate-shadow-heart-3D {
-   from {
-      transform: translate(-50%, -50%) rotateY(0);
-   }
-   to {
-      transform: translate(-50%, -50%) rotateY(360deg);
-   }
-}
-
-@keyframes rotate-heart-3D {
-   from {
-      transform: rotateY(0);
-   }
-   to {
-      transform: rotateY(360deg);
-   }
 }
