@@ -32,7 +32,7 @@ body {
    position: relative;
    text-align: center;
    z-index: 999;
-   animation: rotate-heart-3D 8s infinite alternate linear;
+   animation: rotate-heart-3D 6s infinite alternate linear;
 }
 
 .beated-heart {
@@ -111,7 +111,7 @@ body {
    height: 600px;
    width: 600px;
    border-radius: 10px;
-   animation: rotate-shadow-heart-3D 8s infinite alternate linear;
+   animation: rotate-shadow-heart-3D 6s infinite alternate linear;
 }
 
 .shadow-half {
