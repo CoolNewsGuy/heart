@@ -5,5 +5,6 @@ const ShadowHeart = (function () {
    return {
       heart,
       parts,
+      color: "rgb(247, 2, 255)",
    };
 })();
