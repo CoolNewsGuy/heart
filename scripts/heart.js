@@ -17,5 +17,3 @@ const Heart = (function () {
       setTimeout(beat, 1200);
    }
 })();
-
-// onload = Heart.beat;
