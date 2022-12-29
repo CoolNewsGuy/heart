@@ -15,6 +15,7 @@ body {
 }
 
 body {
+   overflow: hidden;
    background: linear-gradient(
       90deg,
       rgba(2, 0, 36, 1) 0%,
@@ -136,7 +137,7 @@ body {
 
 /* * stars */
 .star {
-   background: #7aeafd;
+   background: #a9effc;
    height: 10px;
    width: 10px;
    border-radius: 50%;
