@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap");
+:root {
+   --move-x: -2.5%;
+   --move-y: -3%;
+}
+
 * {
    box-sizing: 0;
    font-family: "Rubik Bubbles", cursive, Arial, Helvetica, sans-serif;
@@ -46,14 +51,19 @@ body {
 .first-half {
    top: 50%;
    left: 50%;
-   transform: translate(-65%, -56%) rotate(-45deg);
+   transform: translate(calc(-65% + var(--move-x)), calc(-56% + var(--move-y)))
+      rotate(-45deg);
    border-bottom-right-radius: 30px;
 }
 
 .second-half {
    top: 50%;
    left: 50%;
-   transform: translate(-34.6%, -56%) rotate(45deg);
+   transform: translate(
+         calc(-34.6% + var(--move-x)),
+         calc(-56% + var(--move-y))
+      )
+      rotate(45deg);
    border-bottom-left-radius: 30px;
 }
 
@@ -63,7 +73,7 @@ body {
    font-size: 7.5rem;
    top: 50%;
    left: 50%;
-   transform: translate(-50%, -75%);
+   transform: translate(-51%, -80%);
    background: linear-gradient(
       to right,
       #54cffc,
@@ -107,7 +117,7 @@ body {
 .shadow-half {
    width: 350px;
    height: 500px;
-   background: rgb(183, 0, 255);
+   background: rgb(247, 2, 255);
    border-radius: 250px 250px 0 20px;
    position: absolute;
    z-index: -1;
