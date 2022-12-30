@@ -1,7 +1,6 @@
 const createStar = function () {
    let star = document.querySelector(".star").cloneNode(),
-      hideAnimationTime = Math.random() * 12 + 6;
-   let moveStar = setInterval(animateStar, 100);
+      moveStar = setInterval(animateStar, 100);
 
    star.style.cssText = `
       position: absolute;
@@ -28,4 +27,4 @@ const createStar = function () {
    document.body.insertBefore(star, document.querySelector(".star"));
 };
 
-// for (let i = 0; i < 70; i++) createStar();
+for (let i = 0; i < 100; i++) createStar();
