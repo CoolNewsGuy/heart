@@ -8,7 +8,13 @@ const createStar = function () {
       z-index: 999;
    `;
 
+   function animateStar() {
+      star.style.top = +star.style.top.replace("px", "") + 1 + "px";
+   }
+
+   setInterval(animateStar, 100);
+
    document.body.insertBefore(star, document.querySelector(".star"));
 };
 
-for (let i = 0; i < 40; i++) createStar();
+// for (let i = 0; i < 50; i++) createStar();
