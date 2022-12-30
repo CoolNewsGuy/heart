@@ -147,11 +147,11 @@ body {
    left: 40px;
 }
 
-@keyframes hide-star {
+@keyframes create-star {
    from {
-      opacity: 1;
+      opacity: 0;
    }
    to {
-      opacity: 0;
+      opacity: 1;
    }
 }
