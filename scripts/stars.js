@@ -19,9 +19,12 @@ const createStar = function () {
    }
 
    setInterval(animateStar, 100);
-   setTimeout(removeStar, hideAnimationTime * 1000);
+   setTimeout(() => {
+      removeStar();
+      createStar();
+   }, hideAnimationTime * 1000);
 
    document.body.insertBefore(star, document.querySelector(".star"));
 };
 
-for (let i = 0; i < 50; i++) createStar();
+// for (let i = 0; i < 50; i++) createStar();
